@@ -40,7 +40,7 @@ body {
 
 /* Hidden by default on desktop screens */
 .hamburger-icon {
-  display: none;
+ /* display: none;*/
   color: white;
   font-size: 2rem;
   cursor: pointer;
@@ -117,5 +117,27 @@ Do not delete any of the above code. */
   .layout-wrapper{
     flex-direction: column;
   }
+
+}
+
+.hamburger-icon{
+  display: block;
+}
+
+.nav-links{
+  /*display:none;*/
+  background-color: red;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  padding: 10px 0px;
+  width: 200px;
+}
+.nav-links li{
+  margin: 10px 0px;
+}
+.menu-container:hover .nav-links{
+  display: flex;
+  flex-direction: column;
 
 }
